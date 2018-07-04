@@ -49,7 +49,7 @@ function counter () {
 
     if (total >= 1) {
 
-        x = x - (360/total);
+        x = x - (360/30);
 
         graphics.arc(100, 100, 78, game.math.degToRad(270),game.math.degToRad(x), true);
 
