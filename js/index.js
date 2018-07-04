@@ -17,6 +17,10 @@ function create () {
     this.layer1 = game.add.sprite(100,100,'layer2');
     this.layer1.scale.setTo(0.5);
     this.layer1.anchor.setTo(0.5);
+
+    this.layer2 = game.add.sprite(100,100,'layer1');
+    this.layer2.scale.setTo(0.5);
+    this.layer2.anchor.setTo(0.5);
 //displaying countdown timer    
     this.text = game.add.text(100,100,{
         fill:'#002100'
@@ -29,8 +33,8 @@ function create () {
     timer.loop(1000, counter, this);
 //adding graphics to game
     graphics = game.add.graphics(0,0);
-
-    graphics.lineStyle(10, 0x33FF00);
+    graphics.lineStyle(11,0xA9A9A9)
+    // graphics.lineStyle(10, 0x33FF00);
 
     counter(); 
 //  Start the timer running - this is important!
