@@ -4,7 +4,7 @@ var game = new Phaser.Game(640,360,Phaser.AUTO,'',{preload: preload, create: cre
 var graphics; //to create arc
 var timer; //countdown timer
 var total = 30; //number of seconds
-var x = -90; //initial rad of arc
+var x = 270; //initial rad of arc
 //preload function
 function preload () {
 //adding assets
@@ -49,9 +49,9 @@ function counter () {
 
     if (total >= 1) {
 
-        x = x + (360/total);
+        x = x - (360/total);
 
-        graphics.arc(100, 100, 78, game.math.degToRad(-90),game.math.degToRad(x), false);
+        graphics.arc(100, 100, 78, game.math.degToRad(270),game.math.degToRad(x), true);
 
         graphics.endFill();
 
